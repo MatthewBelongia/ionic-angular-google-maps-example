@@ -1,0 +1,56 @@
+<ion-view view-title="Main Menu">
+  <ion-content class="padding">
+  
+  <div class="item images-parent">
+  <img src="img/250_360.png" class="center-image"></img>
+  
+  </div>
+  <!--
+  <div class="row">
+  
+  <div class="col mygrid">
+      <img id="animal" src="img/splash_720.png" class="stretch" alt="" />
+    </div>
+</div>
+  -->
+  <ion-item>
+  <input type="text" ng-model="nameFilter" placeholder="Search..."/>
+  </ion-item>
+  <ion-item href="#/graph">
+  <button class="button button-block">
+   Go
+</button>
+</ion-item>
+  <ion-list>
+  <ion-item href="#/map">
+  Tax Info
+  </ion-item>
+  <ion-item href="#/map">
+  Apply for License
+  </ion-item>
+  <ion-item href="#/map">
+  Zoning
+  </ion-item>
+  <ion-item href="#/map">
+  Perks of Wilmington
+  </ion-item>
+  <ion-item class="item-icon-left" href="#/graph" icon="icon ion-search">
+  <i class="icon ion-search"></i>Details
+  </ion-item>
+
+  
+  <ion-item class="item-icon-left" href="#/map" icon="icon ion-search">
+  <i class="icon ion-search"></i>Search
+  </ion-item>
+  <ion-item class="item-icon-left" href="https://www.google.com/maps/d/viewer?mid=1iV3gXYK8hKRXJyDH5344h2yaU-0">
+  <i class="icon ion-search"></i>Available Spaces
+    </ion-item>
+  </ion-list>
+   <div class="item range">
+  <i class="icon ion-volume-low"></i>
+  <input type="range" name="volume">
+  <i class="icon ion-volume-high"></i>
+</div>
+   
+  </ion-content>
+</ion-view>

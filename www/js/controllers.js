@@ -87,4 +87,9 @@ angular.module('angularGoogleMapsExample.controllers', ['angularGoogleMapsExampl
       }
     }, 5000);
 
-  });
+  })
+
+  .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+
+  
+});

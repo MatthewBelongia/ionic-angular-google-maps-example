@@ -30,6 +30,18 @@ var app = angular.module('angularGoogleMapsExample', ['ionic', 'ngCordova', 'uiG
 
       $stateProvider
 
+      .state('app', {
+        url: '/menu',
+        templateUrl: 'templates/menu.html',
+        controller: 'AppCtrl'
+      })
+
+      .state('graph', {
+        url: '/graph',
+        templateUrl: 'templates/graphs.html',
+        controller: 'AppCtrl'
+      })
+
         .state('map', {
           url: '/map',
           templateUrl: 'templates/map.html',
@@ -37,7 +49,7 @@ var app = angular.module('angularGoogleMapsExample', ['ionic', 'ngCordova', 'uiG
         });
 
       // if none of the above states are matched, use this as the fallback
-      $urlRouterProvider.otherwise('/map');
+      $urlRouterProvider.otherwise('/menu');
 
     })
   ;
